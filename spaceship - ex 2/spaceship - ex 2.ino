@@ -1,4 +1,4 @@
-int switchState = 0
+int switchState = 0;
 
 void setup() {
   pinMode(3, OUTPUT);
@@ -22,13 +22,13 @@ void loop() {
     digitalWrite(4, LOW);
     digitalWrite(5, HIGH);
 
-    delay(250);  // quarter second wait
+    delay(2500);  // quarter second wait
 
     // far red turns off, middle red turns on
     digitalWrite(4, HIGH);
     digitalWrite(5, LOW);
 
-    delay(250);  //tt
+    delay(2500);
   }
 
 }
