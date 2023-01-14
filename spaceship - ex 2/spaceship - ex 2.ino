@@ -17,18 +17,33 @@ void loop() {
     digitalWrite(4, LOW);
     digitalWrite(5, LOW);
   } else {
+
+    digitalWrite(3, LOW);
+
+    //int i = 0;
+    for (int i = 0; i < 3; i++) {
+      digitalWrite(4, HIGH);
+      digitalWrite(5, HIGH);
+      delay(250);
+      digitalWrite(4, LOW);
+      digitalWrite(5, LOW);
+      delay(250);
+    }
+
+
+
     // far red light on, green and middle red off (button press)
     digitalWrite(3, LOW);
     digitalWrite(4, LOW);
     digitalWrite(5, HIGH);
 
-    delay(2500);  // quarter second wait
+    delay(3000);  // quarter second wait
 
     // far red turns off, middle red turns on
     digitalWrite(4, HIGH);
     digitalWrite(5, LOW);
 
-    delay(2500);
+    delay(3000);
   }
 
 }
